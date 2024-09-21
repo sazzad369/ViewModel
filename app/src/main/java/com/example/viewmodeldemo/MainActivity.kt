@@ -22,5 +22,11 @@ class MainActivity : AppCompatActivity() {
             counterViewModel.increment()
             binding.textView.text = counterViewModel.counter.toString()
         }
+
+            binding.countdecbtn.setOnClickListener {
+            counterViewModel.decrement()
+            binding.textView.text = counterViewModel.counter.toString()
+        }
     }
+
 }
