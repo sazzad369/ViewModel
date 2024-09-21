@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             counterViewModel.decrement()
             binding.textView.text = counterViewModel.counter.toString()
         }
+            binding.resetbtn.setOnClickListener {
+            counterViewModel.reset()
+            binding.textView.text = counterViewModel.counter.toString()
+        }
     }
 
 }
